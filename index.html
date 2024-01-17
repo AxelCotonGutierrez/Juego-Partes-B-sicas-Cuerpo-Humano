@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes del Cuerpo Humano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <header>
+		<div class="menu">
+			<button class="menu-toggle">☰</button>
+			<ul><li><a href="https://axelcotongutierrez.github.io/learningmathematicas/">
+				<img src="cb.jpg"> 
+			</a></li>
+				<li><a href="/learningmathematicas/projects/Cursos/">Cursos y Materias</a></li>
+				<li><a href="/learningmathematicas/projects/Niveles/">Niveles</a></li>
+				<li><a href="/learningmathematicas/">Entradas</a></li>
+				<li><a href="/learningmathematicas/tags">Etiquetas</a></li>
+				<li><a href="/learningmathematicas/about">Blog</a></li>
+				<li><a href="#">Utilidades</a>
+					<ul>
+						<li><a href="/learningmathematicas/projects/Utilidades/Glosario.html">Glosario</a></li>
+						<li><a href="/learningmathematicas/projects/Utilidades/Programacion.html">Programación</a></li>
+						<li><a href="/learningmathematicas/projects/Utilidades/Soroban.html">Soroban</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<a href="https://axelcotongutierrez.github.io/learningmathematicas/">
+			<img src="https://axelcotongutierrez.github.io/learningmathematicas/assets/images//top.jpg" alt="Blog Mathematica" style="display: block; margin: 0 auto; width: 100%; height: auto;">
+		  </a>
+		  <h1 style="text-align: center;">JUEGO DE LAS PARTES DEL CUERPO HUMANO</h1>
+		</header>
+	  <br>
+   
+    <div class="container2">
+        <span class="pregunta">Arrastra las palabras a la parte correcta del cuerpo</span>
+    </div>
+    <div class="container">
+        <div id="game-area" style="position: relative;">
+            <img src="cuerpo-humano.jpg" id="human-body" alt="Imagen del cuerpo humano" style="width: 50%;">
+            <div class="word-slot" id="head-slot"></div>
+            <div class="word-slot" id="cuello-slot"></div>
+            <div class="word-slot" id="pecho-slot"></div>
+            <div class="word-slot" id="tronco-slot"></div>
+            <div class="word-slot" id="codo-slot"></div>
+            <div class="word-slot" id="brazo-slot"></div>
+            <div class="word-slot" id="mano-slot"></div>
+            <div class="word-slot" id="pierna-slot"></div>
+            <div class="word-slot" id="rodilla-slot"></div>
+            <div class="word-slot" id="pie-slot"></div>
+        </div>
+        
+        <div id="words-area">
+            
+            <img src="cabeza.jpg" class="draggable-word" draggable="true" alt="Cabeza">
+            <img src="cuello.jpg" class="draggable-word" draggable="true" alt="Cuello">
+            <img src="pecho.jpg" class="draggable-word" draggable="true" alt="Pecho">
+            <img src="tronco.jpg" class="draggable-word" draggable="true" alt="Tronco">
+            <img src="codo.jpg" class="draggable-word" draggable="true" alt="Codo">
+            <img src="brazo.jpg" class="draggable-word" draggable="true" alt="Brazo">
+            <img src="mano.jpg" class="draggable-word" draggable="true" alt="Mano">
+            <img src="pierna.jpg" class="draggable-word" draggable="true" alt="Pierna">
+            <img src="rodilla.jpg" class="draggable-word" draggable="true" alt="Rodilla">
+            <img src="pie.jpg" class="draggable-word" draggable="true" alt="Pie">
+        </div>
+        <button id="check-button" class="guess-button">Comprobar</button>
+        <div class="msj" id="result"></div>
+        <button id="reset-button" class="guess-button">Volver a Jugar</button>
+
+    </div>
+    <script src="script.js"></script>
+    <br>
+	<footer class="footer">
+		<ul class="footer-links">
+			<li><a href="http://github.com/AxelCotonGutierrez"> <img src="githubinverseicon.jpg"></a></li>
+			<li><a href="https://www.youtube.com/@learningmathematicas"> <img src="youtubeinverseicon.jpg"></i></a></li>
+		</ul>
+	</footer>
+</body>
+</html>
