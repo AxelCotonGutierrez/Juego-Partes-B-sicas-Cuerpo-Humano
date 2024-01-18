@@ -1,7 +1,7 @@
 # Juego para aprender las partes básicas del cuerpo humano.
 
 
-![Juego del Color de la Figura](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/0011JCuerpoHumano/J01CH.jpg)
+![Juego de las Partes Básicas del Cuerpo Humano](https://axelcotongutierrez.github.io/learningmathematicas/assets/images//posts/0011JCuerpoHumano/J01CH.jpg)
 
 Dentro del blog: https://axelcotongutierrez.github.io/learningmathematicas/
 
@@ -11,7 +11,7 @@ Juego para Infantil
 
 Puedes probar el juego en esta url:
 
-https://axelcotongutierrez.github.io/Juego-Figuras-Planas2/
+https://axelcotongutierrez.github.io/Juego-Partes-B-sicas-Cuerpo-Humano/
 
 ¡Bienvenido a nuestra emocionante aventura de aprendizaje sobre el cuerpo humano! En este juego, te sumergirás en el fascinante mundo de las partes del cuerpo, arrastrando y colocando palabras en sus ubicaciones correctas. Prepárate para explorar y aprender sobre el cuello, rodilla, mano y más. Para tener éxito, deberás asociar cada palabra con la parte correcta del cuerpo.
 
