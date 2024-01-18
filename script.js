@@ -54,14 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleTouchMove(e) {
-        e.preventDefault(); // Evita acciones por defecto en el navegador
         if (selectedElement) {
+            e.preventDefault(); // Solo previene el desplazamiento predeterminado cuando se arrastra un elemento
             const touch = e.targetTouches[0];
             selectedElement.style.position = 'absolute';
             selectedElement.style.left = `${touch.pageX - selectedElement.offsetWidth / 2}px`;
             selectedElement.style.top = `${touch.pageY - selectedElement.offsetHeight / 2}px`;
         }
     }
+    
 
     function isElementOverSlot(element, slot) {
         const elementRect = element.getBoundingClientRect();
