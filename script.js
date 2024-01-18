@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const wordsArea = document.getElementById('words-area');
     let selectedElement = null;
 
+
+    function resetElementStyle(element) {
+        element.style.position = '';
+        element.style.left = '';
+        element.style.top = '';
+    }
+
     // Funciones para manejar eventos de arrastre con mouse
     function handleDragStart() {
         selectedElement = this;
@@ -15,8 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleDragEnd() {
-        this.classList.remove('dragging');
-        selectedElement = null;
+        if (selectedElement) {
+            let isElementInSlot = false;
+            slots.forEach(slot => {
+                if (isElementOverSlot(selectedElement, slot)) {
+                    slot.appendChild(selectedElement);
+                    resetElementStyle(selectedElement);
+                    isElementInSlot = true;
+                }
+            });
+
+            if (!isElementInSlot) {
+                wordsArea.appendChild(selectedElement);
+            }
+
+            this.classList.remove('dragging');
+            selectedElement = null;
+        }
     }
 
     draggables.forEach(draggable => {
@@ -41,16 +63,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function isElementOverSlot(element, slot) {
+        const elementRect = element.getBoundingClientRect();
+        const slotRect = slot.getBoundingClientRect();
+
+        return (
+            elementRect.left < slotRect.right &&
+            elementRect.right > slotRect.left &&
+            elementRect.top < slotRect.bottom &&
+            elementRect.bottom > slotRect.top
+        );
+    }
+
+
     function handleTouchEnd() {
         if (selectedElement) {
+            let isElementInSlot = false;
+            slots.forEach(slot => {
+                if (isElementOverSlot(selectedElement, slot)) {
+                    slot.appendChild(selectedElement);
+                    resetElementStyle(selectedElement);
+                    isElementInSlot = true;
+                }
+            });
+
+            if (!isElementInSlot) {
+                wordsArea.appendChild(selectedElement);
+            }
+
             selectedElement.classList.remove('dragging');
             selectedElement = null;
         }
     }
+
     draggables.forEach(draggable => {
         draggable.addEventListener('touchstart', handleTouchStart);
         draggable.addEventListener('touchend', handleTouchEnd);
     });
+
+    // Agregar eventos táctiles en el área del juego
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
 
     // Permitir que los slots reciban elementos arrastrables
     slots.forEach(slot => {
