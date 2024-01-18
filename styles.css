@@ -196,24 +196,24 @@ h1 {
     }
 
     #head-slot {
-      top: 2%;  
+      top: 3%;  
       left: 25%; 
      }
      #cuello-slot {
-      top: 32%;  
+      top: 33%;  
       left: 32%; 
        }
     #pecho-slot {
-      top: 37%; 
-      left: 65%; 
+      top: 38%; 
+      left: 64%; 
       }
     #tronco-slot {
       top: 42%;  
       left: 25%; 
       }
      #codo-slot {
-      top: 57%;  
-      left: 25%; 
+      top: 56%;  
+      left: 26%; 
       }
      #brazo-slot {
       top: 52%; 
