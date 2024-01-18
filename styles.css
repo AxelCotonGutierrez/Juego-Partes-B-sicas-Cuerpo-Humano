@@ -114,14 +114,13 @@ h1 {
     background-color: transparent;
   }
   #head-slot {
-    top: 30px;  
-  left: 120px;
-}
-
+    top: 2%;  
+    left: 15%; 
+   }
 #cuello-slot {
-  top: 140px;  
-  left: 180px; 
-}
+  top: 27%;  
+  left: 20%; 
+   }
 #pecho-slot {
   top: 35%; 
   left: 65%; 
@@ -172,25 +171,70 @@ h1 {
         }
         
     .word-slot {
-      height: 20px; /* Altura reducida para los slots */
-      width:60px; /* Ancho reducido para los slots */
+      height: 20px; 
+      width:60px; 
     }
-    #head-slot {
-      top: 7px;  
-      left: 40px; 
-    }
-
     .draggable-word {
-      margin: 5px; /* Margen más pequeño */
-      max-width: 50px; /* Ancho máximo reducido */
-      max-height: 20px; /* Altura máxima reducida */
-      /* Si las imágenes son de fondo, ajusta su tamaño aquí también */
+      margin: 5px; 
+      max-width: 50px; 
+      max-height: 20px; 
+     
     }
   
     /* Aquí podrías ajustar el tamaño de las imágenes si están definidas en línea */
     .draggable-word img {
-      max-width: 50%; /* Hace que la imagen sea completamente responsive */
-      height: auto; /* Mantiene la proporción de aspecto de la imagen */
+      max-width: 50%; 
+      height: auto; 
     }
    
   }
+  @media (orientation: landscape) {
+    /* Estilos específicos para los slots cuando el dispositivo está en horizontal */
+    .word-slot {
+      height: 20px; 
+      width:60px; 
+    }
+
+    #head-slot {
+      top: 2%;  
+      left: 25%; 
+     }
+     #cuello-slot {
+      top: 32%;  
+      left: 32%; 
+       }
+    #pecho-slot {
+      top: 37%; 
+      left: 65%; 
+      }
+    #tronco-slot {
+      top: 42%;  
+      left: 25%; 
+      }
+     #codo-slot {
+      top: 57%;  
+      left: 25%; 
+      }
+     #brazo-slot {
+      top: 52%; 
+      left: 67%; 
+    }
+    #mano-slot {
+      top: 68%;
+      left: 68%; 
+     }
+    #pierna-slot {
+      top: 83%; 
+      left: 64%; 
+     }
+    #rodilla-slot {
+      top: 73%;  
+      left: 30%; 
+      }
+     #pie-slot {
+      top: 87%;  
+      left: 28%; 
+       }
+
+    
+}
