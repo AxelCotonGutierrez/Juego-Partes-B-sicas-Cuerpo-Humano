@@ -114,13 +114,14 @@ h1 {
     background-color: transparent;
   }
   #head-slot {
-    top: 2%;  
-    left: 15%; 
-   }
+    top: 30px;  
+  left: 120px;
+}
+
 #cuello-slot {
-  top: 27%;  
-  left: 20%; 
-   }
+  top: 140px;  
+  left: 180px; 
+}
 #pecho-slot {
   top: 35%; 
   left: 65%; 
@@ -174,6 +175,11 @@ h1 {
       height: 20px; /* Altura reducida para los slots */
       width:60px; /* Ancho reducido para los slots */
     }
+    #head-slot {
+      top: 7px;  
+      left: 40px; 
+    }
+
     .draggable-word {
       margin: 5px; /* Margen más pequeño */
       max-width: 50px; /* Ancho máximo reducido */
