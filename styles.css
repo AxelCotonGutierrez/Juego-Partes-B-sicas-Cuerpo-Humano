@@ -88,9 +88,10 @@ h1 {
 }
 
 #human-body {
-  width: 844px;
-  height: 938px;
+  width: 633px; 
+  height: 703px;
 }
+
 
 #words-area {
     display: flex;
@@ -121,11 +122,11 @@ h1 {
   }
   #head-slot {
     top: 4%;  
-    left: 12%; 
+    left: 5%; 
    }
 #cuello-slot {
-  top: 34%;  
-  left: 15%; 
+  top: 32%;  
+  left: 10%; 
    }
 #pecho-slot {
   top: 40%; 
@@ -133,11 +134,11 @@ h1 {
   }
 #tronco-slot {
   top: 42%;  
-  left: 10%; 
+  left: 2%; 
   }
  #codo-slot {
   top: 57%;  
-  left: 2%; 
+  left: 1%; 
   }
  #brazo-slot {
   top: 52%; 
@@ -153,11 +154,11 @@ h1 {
  }
 #rodilla-slot {
   top: 75%;  
-  left: 10%; 
+  left: 5%; 
   }
  #pie-slot {
   top: 87%;  
-  left: 8%; 
+  left: 2%; 
    }
    @media (max-width: 768px) {
      
