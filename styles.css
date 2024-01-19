@@ -87,6 +87,10 @@ h1 {
   background-color: #3367d6;
 }
 
+#human-body {
+  width: 844px;
+  height: 938px;
+}
 
 #words-area {
     display: flex;
@@ -100,6 +104,8 @@ h1 {
     border: 1px solid #EABE3F;
     border-radius: 5px;
     cursor: move;
+    width: 150px;
+    height: 50px;
     
   }
 
@@ -108,50 +114,50 @@ h1 {
     justify-content: center; 
     align-items: center; 
     border: 2px dashed #EABE3F;
-    height: 52px; 
-    width: 170px; 
+    height: 60px; 
+    width: 180px; 
     position: absolute;
     background-color: transparent;
   }
   #head-slot {
-    top: 2%;  
-    left: 15%; 
+    top: 4%;  
+    left: 12%; 
    }
 #cuello-slot {
-  top: 27%;  
-  left: 20%; 
+  top: 34%;  
+  left: 15%; 
    }
 #pecho-slot {
-  top: 35%; 
-  left: 65%; 
+  top: 40%; 
+  left: 73%; 
   }
 #tronco-slot {
   top: 42%;  
-  left: 15%; 
+  left: 10%; 
   }
  #codo-slot {
   top: 57%;  
-  left: 15%; 
+  left: 2%; 
   }
  #brazo-slot {
   top: 52%; 
-  left: 67%; 
+  left: 83%; 
 }
 #mano-slot {
-  top: 68%;
-  left: 68%; 
+  top: 70%;
+  left: 86%; 
  }
 #pierna-slot {
   top: 83%; 
-  left: 64%; 
+  left: 77%; 
  }
 #rodilla-slot {
-  top: 73%;  
-  left: 20%; 
+  top: 75%;  
+  left: 10%; 
   }
  #pie-slot {
   top: 87%;  
-  left: 17%; 
+  left: 8%; 
    }
    @media (max-width: 768px) {
      
@@ -169,72 +175,26 @@ h1 {
       font-size: 20px;
          
         }
-        
+    #human-body {
+          width: 200px; 
+          height: 221px; 
+      }
     .word-slot {
-      height: 20px; 
-      width:60px; 
+      height: 15px; 
+      width: 45px; 
     }
     .draggable-word {
       margin: 5px; 
-      max-width: 50px; 
-      max-height: 20px; 
+      width: 40px; 
+      height: 12px; 
      
     }
   
     /* Aquí podrías ajustar el tamaño de las imágenes si están definidas en línea */
     .draggable-word img {
-      max-width: 50%; 
+      width: 50%; 
       height: auto; 
     }
    
   }
-  @media (orientation: landscape) {
-    /* Estilos específicos para los slots cuando el dispositivo está en horizontal */
-    .word-slot {
-      height: 20px; 
-      width:60px; 
-    }
-
-    #head-slot {
-      top: 3%;  
-      left: 25%; 
-     }
-     #cuello-slot {
-      top: 33%;  
-      left: 32%; 
-       }
-    #pecho-slot {
-      top: 38%; 
-      left: 64%; 
-      }
-    #tronco-slot {
-      top: 42%;  
-      left: 25%; 
-      }
-     #codo-slot {
-      top: 56%;  
-      left: 26%; 
-      }
-     #brazo-slot {
-      top: 52%; 
-      left: 67%; 
-    }
-    #mano-slot {
-      top: 68%;
-      left: 68%; 
-     }
-    #pierna-slot {
-      top: 83%; 
-      left: 64%; 
-     }
-    #rodilla-slot {
-      top: 73%;  
-      left: 30%; 
-      }
-     #pie-slot {
-      top: 87%;  
-      left: 28%; 
-       }
-
-    
-}
+ 
